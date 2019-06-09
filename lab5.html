@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8" /> 
+<title>Лабораторная работа №5</title> 
+</head> 
+<body class="body">
+<p><b><center>Задание 1.</p></b></center>
+<p> 1.	Открываем консоль.</br>
+2.Убеждаемся, что находимся в своём домашнем каталоге, с помощью команды:$ pwd</br>
+3.Переходим в root.</br>
+4.Выполняем команды:</br>
+cp /var/log/messages messages</br>
+cp /var/log/maillogmaillog</br>
+cp /etc/passwdpasswd</br>
+5.Делаем скопированные файлы доступными обычному пользователю с помощью chown:</br>
+chown wsms1 messages</br>
+chown wsms1 maillog</br>
+chown wsms1 passwd</br>
+6.Проверяем права с помощью ls: ls -l </br>
+7.Выходим из root.</br>
+8.Создаем файл с именем «sms.txt» командой: $ touch sms.txt </br>
+9.Вводим в файл следующую информацию «Я, Курников Андрей Юрьевич, группа ИС-О-17/1, лабораторная №5» с помощью команды cat.</br>
+10.Добавляем в этот файл две пустых строки.</br>
+11.Добавляем в этот файл вывод следующих команды:</br>
+tail messages</br>
+tail maillog</br>
+12.С помощью команды cutвыделяем из файла passwdпервое и третье поля, вывод этой команды отсортировываем по алфавиту и добавляем в созданный ранее файл sms.txt:</br>
+cut –d: -f1,3 passwd | sort –d >> sms.txt</br>
+13.С помощью команды wcдобавляем в файл sms.txtколичество строк, слов и байт, содержащихся в файлах messages, maillog и passwd.</br>
+14. Добавляем в этот файл дату командой: date >> sms.txt </p></br>
+<p><b>Файл sms.txt:</p></b>
+<p><img src="6.jpg" width="400" height="400" </img></p></br>
+
+<p><b>Скриншот терминала:</p></b>
+<p><img src="66.jpg" width="400" height="400" </img></p></br>
+
+<p><a href='index.html'><font color="#000000">На главную</a></font></p>
+</body> 
+</html>

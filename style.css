@@ -1,0 +1,24 @@
+.catimg{
+	background-image: url("cat.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.catimg2{
+	background-image: url("cat2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.body{
+	background-image: url("333.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.body2{
+	background-image: url("fon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
